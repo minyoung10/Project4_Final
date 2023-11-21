@@ -48,7 +48,9 @@
 	<th>Title</th>
 	<th>Writer</th>
 	<th>Content</th>
+	<th>Category</th>
 	<th>Regdate</th>
+	<th>Modified</th>
 	<th>Edit</th>
 	<th>Delete</th>
 </tr>
@@ -58,7 +60,9 @@
 		<td>${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
 		<td>${u.getContent()}</td>
+		<td>${u.getCategory()}</td>
 		<td>${u.getRegdate()}</td>
+		<td>${u.getModified()}</td>
 		<td><a href="editform.jsp?id=${u.getSeq()}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.getSeq()}')">Delete</a></td>
 	</tr>

@@ -7,8 +7,10 @@ public class BoardVO {
 	private String title;
 	private String writer;
 	private String content;
+	private String category;
 	private Date regdate;
 	private int cnt;
+	private Date modified;
 	
 	public int getSeq() {
 		return seq;
@@ -34,6 +36,8 @@ public class BoardVO {
 	public void setContent(String content) {
 		this.content = content;
 	}
+	public String getCategory() {return category;}
+	public void setCategory(String category) {this.category = category;}
 	public Date getRegdate() {
 		return regdate;
 	}
@@ -46,4 +50,6 @@ public class BoardVO {
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
 	}
+	public Date getModified() {return modified;}
+	public void setModified(Date modified) {this.modified = modified;}
 }
